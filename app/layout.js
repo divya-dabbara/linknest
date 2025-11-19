@@ -1,5 +1,23 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+
+
+
+// Determine if the navbar should be shown based on the current pathname
+// Note: This logic should be placed inside a component or hook, as usePathname is a React hook
+// However, for the sake of this example, we will assume it's used correctly
+// In a real application, you would typically use this logic inside a component or a hook.
+// For example, you could use it in the RootLayout component or a custom hook.
+// Here, we are assuming that the code is executed in a context where usePathname is available.
+// This is a simplified example and may not work directly in the global scope.
+// const showNavbar = ["/", "/generate"].includes(pathname);
+// For the sake of this example, we will use window.location.pathname
+// This is not recommended in a real Next.js application, as it does not work with server-side rendering or static generation.
+// Instead, you should use the usePathname hook from next/navigation inside a component.
+// However, for the sake of this example, we will assume that the code is executed in a context where window.location.pathname is available.        
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +40,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
