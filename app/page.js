@@ -30,9 +30,6 @@ export default function Home() {
           <img src="/home.png" alt="homepage image" />
         </div>
       </section>
-      <section className="bg-[#cf1010] min-h-[100vh]">
-
-      </section>
     </main>
   );
 }
