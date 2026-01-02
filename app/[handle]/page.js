@@ -44,7 +44,7 @@ export default async function Page({ params }) {
   "handle": "codewithharry"
 }
   return (
-    <div className="bg-orange-200  min-h-screen flex justify-center items-start py-10">   
+    <div className="bg-cyan-900  min-h-screen flex justify-center items-start py-10">   
      {item &&<div className="photo flex flex-col justify-center items-center gap-4">
         <img src={item.pic} alt="Profile Picture" />
         <span className="font-bold text-xl">@{item.handle}</span>
@@ -52,7 +52,7 @@ export default async function Page({ params }) {
         <div className="links">
             {item.links.map((item,index) => {
                 return <Link href={item.link} key={index}>
-                    <div className="bg-orange-50 flex justify-center py-4 px-2 shadow-lg rounded-md my-3 min-w-96">
+                    <div className="bg-cyan-50 text-cyan-700 flex justify-center py-4 px-2 shadow-lg rounded-md my-3 min-w-96">
                       {item.linktext}
                     </div>
                     </Link>  
