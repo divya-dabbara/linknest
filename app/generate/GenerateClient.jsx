@@ -51,7 +51,8 @@ const Generate = () => {
       redirect: "follow",
     };
 
-    const r = await fetch("http://localhost:3000/api/add", requestOptions);
+    // const r = await fetch("http://localhost:3000/api/add", requestOptions);
+    const r = await fetch("/api/add", requestOptions);
     const result = await r.json();
     if(result.success) {
     toast.success(result.message)
