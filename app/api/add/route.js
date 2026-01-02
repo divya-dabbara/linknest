@@ -5,7 +5,7 @@ export async function POST(request) {
     // This function handles the POST request to add a new link
   const body = await request.json()
   const client = await clientPromise
-  const db = client.db('bittree')
+  const db = client.db('linktree')
   const collection = db.collection('links')
 
   // If the handle already exists, return an error
