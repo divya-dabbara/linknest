@@ -1,4 +1,4 @@
-# Linktree Clone
+# LinkNest
 
 A full-stack Linktree-style application built using **Next.js** and **MongoDB Atlas**, allowing users to create and manage multiple links from a single profile page.
 
