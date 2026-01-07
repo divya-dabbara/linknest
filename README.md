@@ -27,3 +27,4 @@ A full-stack Linktree-style application built using **Next.js** and **MongoDB At
 - Built for learning and portfolio purposes
 - Environment variables are used for secure configuration
 - Local MongoDB was replaced with MongoDB Atlas for production deployment
+- The navigation reflects the MVP structure of the application; some navigation items do not have corresponding pages implemented
